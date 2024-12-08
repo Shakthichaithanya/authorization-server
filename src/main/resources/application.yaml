@@ -1,0 +1,25 @@
+server:
+  port: 9000
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/oauth
+      database: oauth
+      username: admin
+      password: password
+  security:
+    user:
+      name: admin
+      password: admin
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/authorization
+    username: postgres
+    password: admin
